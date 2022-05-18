@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>math | single&#39;s blog</title>
+  <title>learning ros | single&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Differential equation">
+  <meta name="description" content="“learning ROS” 12345mkdir -p demo01_ws&#x2F;srccd demo01_ws&#x2F;catkin_makecd srccatkin_create_pkg helloworld roscpp rospy std_msg">
 <meta property="og:type" content="article">
-<meta property="og:title" content="math">
-<meta property="og:url" content="http://example.com/2022/03/30/math/index.html">
+<meta property="og:title" content="learning ros">
+<meta property="og:url" content="http://example.com/2022/05/17/leaning%20ros/index.html">
 <meta property="og:site_name" content="single&#39;s blog">
-<meta property="og:description" content="Differential equation">
+<meta property="og:description" content="“learning ROS” 12345mkdir -p demo01_ws&#x2F;srccd demo01_ws&#x2F;catkin_makecd srccatkin_create_pkg helloworld roscpp rospy std_msg">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-03-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-31T01:55:01.295Z">
+<meta property="article:published_time" content="2022-05-17T15:55:58.000Z">
+<meta property="article:modified_time" content="2022-05-18T07:31:59.460Z">
 <meta property="article:author" content="Single">
-<meta property="article:tag" content="math">
+<meta property="article:tag" content="ROS">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="single&#39;s blog" type="application/atom+xml">
@@ -137,42 +137,72 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-math" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-leaning ros" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      math
+      learning ros
     </h1>
   
 
         
-        <a href="/2022/03/30/math/" class="archive-article-date">
-  	<time datetime="2022-03-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-30</time>
+        <a href="/2022/05/17/leaning%20ros/" class="archive-article-date">
+  	<time datetime="2022-05-17T15:55:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>Differential equation</strong></p>
+        <p>“learning ROS”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p demo01_ws/src</span><br><span class="line">cd demo01_ws/</span><br><span class="line">catkin_make</span><br><span class="line">cd src</span><br><span class="line">catkin_create_pkg helloworld roscpp rospy std_msg</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
 
-<table>
-<thead>
-<tr>
-<th align="left">特征方程的根</th>
-<th align="left">微分方程通解中的对应项</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单实根 $r$<br /><br />一对单共轭复根$r_{1,2}&#x3D;\alpha\pm i\beta$<br /><br />$k$ 重实根 $r$ <br /><br />$k$ 重共轭复根 $r_{1,2}&#x3D;\alpha\pm i\beta$<br /><br /><br /></td>
-<td align="left">给出一项 $e^{rx}$<br /><br />给出两项$e^{\alpha x}\cos\beta x,e^{\alpha x}\sin \beta x$<br /><br />给出 $k$ 项 $e^{rx},xe^{rx},x^2e^{rx},\cdots,x^{k-1}e^{rx}$<br /><br />给出 $2k$项<br />       $e^{\alpha x}\cos\beta x,xe^{\alpha x}\cos\beta x,\cdots,x^{k-1}e^{\alpha x}\cos\beta x,$<br />       $e^{\alpha x}\sin\beta x,xe^{\alpha x}\sin\beta x,\cdots,x^{k-1}e^{\alpha x}\sin\beta x.$</td>
-</tr>
-</tbody></table>
-<p>情形Ⅱ                 $f(x)&#x3D;e^{\lambda x}[P_l(x)\cos\omega x+P_n(x)\sin\omega x]$，$P_l(x)$,$P_n(x)$分别为  $l$  ,  $n$  次多项式<br>$$<br>k&#x3D;<br>\begin{cases}<br>0,&amp;\lambda\pm i\omega 不是特征根,\<br>1,&amp;\lambda\pm i\omega 是特征单根,\<br>s,&amp;\lambda\pm i\omega 是s重特征根.<br>\end{cases}<br>$$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ros/ros.h&quot;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ros::<span class="built_in">init</span>(argc, argv, <span class="string">&quot;hello_node&quot;</span>);</span><br><span class="line">    <span class="built_in">ROS_INFO</span>(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">add_executable</span>(haha src/helloworld_c.cpp)</span><br><span class="line"><span class="keyword">target_link_libraries</span>(haha <span class="variable">$&#123;catkin_LIBRARIES&#125;</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">roscore</span><br><span class="line">source ./devel/setup.bash</span><br><span class="line">rosrun helloworld haha</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">launch</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">node</span> <span class="attr">pkg</span> = <span class="string">&quot;turtlesim&quot;</span> <span class="attr">type</span> = <span class="string">&quot;turtlesim_node&quot;</span> <span class="attr">name</span> = <span class="string">&quot;turtle_GUI&quot;</span>/&gt;</span></span><br><span class="line">  	<span class="tag">&lt;<span class="name">node</span> <span class="attr">pkg</span> = <span class="string">&quot;turtlesim&quot;</span> <span class="attr">type</span> = <span class="string">&quot;turtle_teleop_key&quot;</span> <span class="attr">name</span> = <span class="string">&quot;turtle_key&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">node</span> <span class="attr">pkg</span> = <span class="string">&quot;hello_vscode&quot;</span> <span class="attr">type</span> = <span class="string">&quot;hello_vscode_c&quot;</span> <span class="attr">name</span> = <span class="string">&quot;hello&quot;</span> <span class="attr">output</span> = <span class="string">&quot;screen&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">launch</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rospack list</span><br><span class="line">rospack find turtlesim</span><br><span class="line">roscd turtlesim</span><br><span class="line">rosls turtlesim</span><br><span class="line">apt search ros-noetic-* | grep -i gmapping</span><br><span class="line">rosrun rqt_grah rqt_grah</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ros/ros.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;std_msgs/String.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ros::<span class="built_in">init</span>(argc, argv, <span class="string">&quot;erGouZi&quot;</span>);</span><br><span class="line">    ros::NodeHandle nh;</span><br><span class="line">    ros::Publisher pub = nh.<span class="built_in">advertise</span>&lt;std_msgs::String&gt;(<span class="string">&quot;fang&quot;</span>, <span class="number">10</span>);</span><br><span class="line">    std_msgs::String msg;</span><br><span class="line">    <span class="function">ros::Rate <span class="title">rate</span><span class="params">(<span class="number">10</span>)</span></span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line">    ros::<span class="built_in">Duration</span>(<span class="number">3</span>).<span class="built_in">sleep</span>();</span><br><span class="line">    <span class="keyword">while</span> (ros::<span class="built_in">ok</span>())</span><br><span class="line">    &#123;</span><br><span class="line">        count++;</span><br><span class="line">        </span><br><span class="line">        std::stringstream ss;</span><br><span class="line">        ss &lt;&lt; <span class="string">&quot;hello ---&gt;&quot;</span> &lt;&lt; count;</span><br><span class="line">        <span class="comment">//msg.data = &quot;hello&quot;;</span></span><br><span class="line">        msg.data = ss.<span class="built_in">str</span>();</span><br><span class="line">        pub.publish = (msg);</span><br><span class="line">        <span class="built_in">ROS_INFO</span>(<span class="string">&quot;The published data is:%s&quot;</span>, ss.<span class="built_in">str</span>().<span class="built_in">c_str</span>());</span><br><span class="line">        rate.<span class="built_in">sleep</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">add_executable</span>(demo01_pub src.demo01_pub.cpp)</span><br><span class="line"><span class="keyword">target_link_libraries</span>(demo01_pub <span class="variable">$&#123;catkin_LIBRARIES&#125;</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ros/ros.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;std_msgs/String.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">doMsg</span><span class="params">(<span class="type">const</span> std_msgs::String::ConstPtr &amp;msg)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">ROS_INFO</span>(<span class="string">&quot;cuiHua subsription data:%s&quot;</span>, msg-&gt;data.<span class="built_in">c_str</span>())</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ros::<span class="built_in">init</span>(argc, argv, <span class="string">&quot;cuiHua&quot;</span>);</span><br><span class="line">    ros::NodeHandle nh;</span><br><span class="line">    ros::Subscriber sub = nh.<span class="built_in">subcribe</span>(<span class="string">&quot;fang&quot;</span>, <span class="number">10</span>, doMsg);</span><br><span class="line">    ros::<span class="built_in">spin</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">add_executable</span>(demo02_sub src/deom02_sub.cpp)</span><br><span class="line"><span class="keyword">target_link_libraries</span>(demo01_pub <span class="variable">$&#123;catkin_LIBARIES&#125;</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rqt_graph</span><br></pre></td></tr></table></figure>
+
+<p><code>Person.msg</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string name</span><br><span class="line">int32 age</span><br><span class="line">float32 height</span><br></pre></td></tr></table></figure>
+
+<p><code>package.xml</code></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build_depend</span>&gt;</span>message_generation<span class="tag">&lt;/<span class="name">build_depend</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">exec_depend</span>&gt;</span>message_runtime<span class="tag">&lt;/<span class="name">exec_depend</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>CMakeLists.txt</code></p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find_package</span>(cakin REQUIRED COMPONENTS</span><br><span class="line">roscpp</span><br><span class="line">rospy</span><br><span class="line">std_msgs</span><br><span class="line">message_generation</span><br><span class="line">)</span><br><span class="line">add_message_files(</span><br><span class="line">FILES</span><br><span class="line">Person.msg</span><br><span class="line">)</span><br><span class="line">generate_messages(</span><br><span class="line">DEPENDENCIES</span><br><span class="line">std_msgs</span><br><span class="line">)</span><br><span class="line">catkin_package(</span><br><span class="line">CATKIN_DEPENDS roscpp rospy std_msgs message_runtime</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p><code>demo3_pub_person.cpp</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ros/ros.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;plumbing_pub_sub/Person.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	publisher:The publisher&#x27;s message</span></span><br><span class="line"><span class="comment">		1.Include header files</span></span><br><span class="line"><span class="comment">			#include &quot;plumbing_pub_sub/Person.h&quot;</span></span><br><span class="line"><span class="comment">		2.Initialize the ROS node</span></span><br><span class="line"><span class="comment">		3.Create a node handle</span></span><br><span class="line"><span class="comment">		4.Create a publisher object</span></span><br><span class="line"><span class="comment">		5.Write release logic and release data</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">setlocale</span>(LC_ALL, <span class="string">&quot;&quot;</span>);</span><br><span class="line">    <span class="built_in">ROS_INFO</span>(<span class="string">&quot;This is the publisher of the message&quot;</span>)</span><br><span class="line">    <span class="comment">// 2.Initialize the ROS node</span></span><br><span class="line">    ros::<span class="built_in">init</span>(argc, argv, <span class="string">&quot;banZhuRen&quot;</span>);</span><br><span class="line">    <span class="comment">// 3.Create a node handle</span></span><br><span class="line">    ros::NodeHandle nh;</span><br><span class="line">    <span class="comment">// 4.Create a publisher object</span></span><br><span class="line">    ros::Publisher pub = nh.<span class="built_in">advertise</span>&lt;plumbing_pub_sub::Person&gt;(<span class="string">&quot;liaoTian&quot;</span>, <span class="number">10</span>);</span><br><span class="line">    <span class="comment">// 5.Write release logic and release data</span></span><br><span class="line">    <span class="comment">// 5-1.Create published data</span></span><br><span class="line">    plumbing_pub_sub::Person person;</span><br><span class="line">    person.name = <span class="string">&quot;single&quot;</span>;</span><br><span class="line">    person.age = <span class="number">1</span>;</span><br><span class="line">    person.height = <span class="number">1.73</span>;</span><br><span class="line">    <span class="comment">// 5-2.Setting the publication frequency</span></span><br><span class="line">    </span><br><span class="line">    <span class="function">ros::Rate <span class="title">rate</span><span class="params">(<span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="comment">// 5-3.Circular release the data</span></span><br><span class="line">    <span class="keyword">while</span>(ros::<span class="built_in">ok</span>())</span><br><span class="line">    &#123;</span><br><span class="line">        person.age += <span class="number">1</span>;</span><br><span class="line">        pub.<span class="built_in">publish</span>(person);</span><br><span class="line">        <span class="built_in">ROS_INFO</span>(<span class="string">&quot;Published message:%s,%d,%.2f&quot;</span>, person.name.<span class="built_in">c_str</span>(), person.age, person.height);</span><br><span class="line">        rate.<span class="built_in">sleep</span>();</span><br><span class="line">        ros::<span class="built_in">spinOnce</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>CMakeLists.txt</code></p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">add_executable</span>(demo03_pub_person src/demo03_pub_person.cpp)</span><br><span class="line"><span class="keyword">target_link_libraries</span>(demo03_pub_person <span class="variable">$&#123;catkin_LIBRARIES&#125;</span>)</span><br><span class="line"><span class="keyword">add_dependencies</span>(demo03_pub_person <span class="variable">$&#123;PROJECT_NAME&#125;</span>_generate_messages_cpp)</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">souce ./devel/setup.bash</span><br><span class="line">rostopic echo liaoTian</span><br></pre></td></tr></table></figure>
+
+<p><code>demo04_sub_person.cpp</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ros/ros.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;plumbing_pub_sub/Person.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	Subscriber:Subscribes to message</span></span><br><span class="line"><span class="comment">		1.Include header files</span></span><br><span class="line"><span class="comment">			#include &quot;plumbing_pub_sub/Person.h&quot;</span></span><br><span class="line"><span class="comment">		2.Initialize the ROS node</span></span><br><span class="line"><span class="comment">		3.Create a node handle</span></span><br><span class="line"><span class="comment">		4.Create a subsriber object</span></span><br><span class="line"><span class="comment">		5.Process subscription data</span></span><br><span class="line"><span class="comment">		6.Call the &#x27;spin()&#x27; function</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">doPerson</span><span class="params">(<span class="type">const</span> plumbing_pub_sub::Person::ConstPtr&amp; person)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">ROS_INFO</span>(<span class="string">&quot;Subscriber information:%s,%d,%.2f&quot;</span>, person-&gt;name.<span class="built_in">c_str</span>(), person-&gt;age, person-&gt;height)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">setlocale</span>(LC_ALL, <span class="string">&quot;&quot;</span>);</span><br><span class="line">    <span class="built_in">ROS_IFNO</span>(<span class="string">&quot;Subscriber implementation&quot;</span>);</span><br><span class="line">   <span class="comment">// 2.Initialize the ROS node</span></span><br><span class="line">    ros::<span class="built_in">init</span>(argc, argv, <span class="string">&quot;jiaZhang&quot;</span>);</span><br><span class="line">    <span class="comment">// 3.Create a node handle</span></span><br><span class="line">    ros::NodeHandle nh;</span><br><span class="line">    <span class="comment">// 4.Create a subsriber object</span></span><br><span class="line">    ros::Subscriber sub = nh.<span class="built_in">subscribe</span>(<span class="string">&quot;liaoTian&quot;</span>, <span class="number">10</span>, doPerson);</span><br><span class="line">    ros::<span class="built_in">spin</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -186,7 +216,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">math</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ROS</a>
         		</li>
       		
 		</ul>
@@ -242,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/03/30/math/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/05/17/leaning%20ros/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -256,18 +286,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/04/12/foc/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          foc
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/03/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2022/04/12/foc/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">foc</div>
       <i class="icon-circle-right"></i>
     </a>
   

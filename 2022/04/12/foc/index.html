@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://example.com/photos/image-20220225230403286.png">
 <meta property="og:image" content="http://example.com/photos/v2-b6165e60926bea9399b794a736d5e335_r.jpg">
 <meta property="article:published_time" content="2022-04-12T08:30:00.000Z">
-<meta property="article:modified_time" content="2022-04-12T09:14:02.604Z">
+<meta property="article:modified_time" content="2022-05-17T16:10:44.103Z">
 <meta property="article:author" content="Single">
 <meta property="article:tag" content="foc">
 <meta name="twitter:card" content="summary">
@@ -204,7 +204,17 @@
             background-color:#00ff90 ; font-weight:bold;
         }
     </style>
-
+nt main (int argc, char *argv[])
+{
+    ros::init(argc, argv, "erGouZi");
+    ros::NodeHandle nh;
+    ros::Publisher pub = nh.advertise<std_msgs::String>("fang", 10);
+    std_msgs::String msg;
+    ros::Rate rate(10);
+    int count = 0;
+    ros::Duration(3).sleep();
+    while (ros::ok())
+    {
 
 <p>&#x3D;&#x3D;会更好&#x3D;&#x3D;</p>
 <p><mark>百科</mark></p>
@@ -290,6 +300,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2022/05/17/leaning%20ros/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          learning ros
+        
+      </div>
+    </a>
   
   
     <a href="/2022/03/30/math/" id="article-nav-older" class="article-nav-link-wrap">
@@ -455,6 +474,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ROS</a>
               </li>
             
             <div class="clearfix"></div>
